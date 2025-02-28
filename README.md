@@ -45,11 +45,40 @@ automate_chatwoot [command] --help
 ## Contributing
 Contributions are welcome! If you would like to contribute to the `automate_chatwoot` project, please fork the repository and submit a pull request.
 
+## Virtual env
+
+- Navigate to the project folder:
+
+```
+cd <your path>/automate_chatwoot
+```
+
+- Create your virtual env
+```
+python3 -m venv venv
+```
+
+- Activate the venv.
+
+On linux or macOS:
+```
+source venv/bin/activate
+```
+
+On Windows:
+```
+.\venv\Scripts\activate
+```
+
+- Install the package
+```
+pip install .
+```
 
 ## Testing for developmen
 Every implementation on contribution must have a test, and still pass on our testbase
 
-Running the tests:
+- Running the tests:
 
 ```bash
 python -m unittest discover -s ./automate_chatwoot/src -p 'test_*.py'
